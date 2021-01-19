@@ -1,0 +1,24 @@
+apply from: 'versions.gradle'
+
+ext {
+    androidx = [
+            core             : "androidx.core:core-ktx:${deps.android.core}",
+            app_compat       : "androidx.appcompat:appcompat:${deps.android.app_compact}",
+            constraint_layout: "androidx.constraintlayout:constraintlayout:${deps.android.constraint}"
+    ]
+
+    google = [
+            material: "com.google.android.material:material:${deps.google.material}",
+    ]
+
+    third = [
+            rebus_permission : "rebus:permission-utils:${deps.third_party.rebus_permission}",
+            budiyev_scan_code: "com.budiyev.android:code-scanner:${deps.third_party.budiyev_scan_code}"
+    ]
+
+    test = [
+            junit         : "junit:junit:${deps.junit}",
+            androidx_junit: "androidx.test.ext:junit:${deps.test.android_junit}",
+            espresso_core : "androidx.test.espresso:espresso-core:${deps.test.espresso_core}"
+    ]
+}
