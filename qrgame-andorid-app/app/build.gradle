@@ -37,8 +37,9 @@ android {
 }
 
 dependencies {
+//  Kotlin
+    implementation proj_deps.kotlin_stdlib
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 //  Android
     implementation androidx.core
     implementation androidx.app_compat
