@@ -3,6 +3,17 @@ apply from: 'deps.gradle'
 
 buildscript {
     ext.kotlin_version = "1.4.10"
+    ext {
+        proj_versions = [
+                gradle_version: "4.1.1",
+                kotlin_version: "1.4.10"
+        ]
+
+        proj_deps = [
+                kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${proj_versions.kotlin_version}"
+        ]
+    }
+
     repositories {
         google()
         jcenter()
