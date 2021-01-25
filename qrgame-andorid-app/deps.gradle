@@ -1,4 +1,4 @@
-apply from: 'versions.gradle'
+apply from: "$rootProject.projectDir/versions.gradle"
 
 ext {
     androidx = [
