@@ -1,0 +1,22 @@
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+
+android {
+    compileSdkVersion sdks.compile_sdk
+
+    defaultConfig {
+        minSdkVersion sdks.min_sdk
+        targetSdkVersion sdks.target_sdk
+        versionCode app.version_major * 10000 + app.version_minor * 100 + app.version_patch
+        versionName "${app.version_major}.${app.version_minor}.${app.version_patch}"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+//  Test
+    testImplementation test.junit
+    androidTestImplementation test.androidx_junit
+    androidTestImplementation test.espresso_core
+}
