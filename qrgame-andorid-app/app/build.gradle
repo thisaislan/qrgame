@@ -37,6 +37,8 @@ android {
 }
 
 dependencies {
+    implementation project(path: ":base")
+
 //  Kotlin
     implementation proj_deps.kotlin_stdlib
 
