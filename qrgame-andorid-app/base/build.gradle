@@ -1,4 +1,5 @@
-apply from: "$rootProject.projectDir/build-common-module.gradle"
+apply plugin: "com.android.library"
+apply from: "$rootProject.projectDir/build-common.gradle"
 
 dependencies {
 //  Android

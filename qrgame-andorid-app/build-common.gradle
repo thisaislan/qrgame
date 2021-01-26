@@ -1,8 +1,8 @@
-apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
     compileSdkVersion versions.sdks.compile_sdk
+    buildToolsVersion versions.tools.build_tools
 
     defaultConfig {
         minSdkVersion versions.sdks.min_sdk
@@ -11,6 +11,15 @@ android {
         versionName "${versions.app.version_major}.${versions.app.version_minor}.${versions.app.version_patch}"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 }
 
