@@ -2,13 +2,13 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    compileSdkVersion sdks.compile_sdk
+    compileSdkVersion versions.sdks.compile_sdk
 
     defaultConfig {
-        minSdkVersion sdks.min_sdk
-        targetSdkVersion sdks.target_sdk
-        versionCode app.version_major * 10000 + app.version_minor * 100 + app.version_patch
-        versionName "${app.version_major}.${app.version_minor}.${app.version_patch}"
+        minSdkVersion versions.sdks.min_sdk
+        targetSdkVersion versions.sdks.target_sdk
+        versionCode versions.app.version_major * 10000 + versions.app.version_minor * 100 + versions.app.version_patch
+        versionName "${versions.app.version_major}.${versions.app.version_minor}.${versions.app.version_patch}"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -16,7 +16,7 @@ android {
 
 dependencies {
 //  Test
-    testImplementation test.junit
-    androidTestImplementation test.androidx_junit
-    androidTestImplementation test.espresso_core
+    testImplementation deps.test.junit
+    androidTestImplementation deps.test.androidx_junit
+    androidTestImplementation deps.test.espresso_core
 }

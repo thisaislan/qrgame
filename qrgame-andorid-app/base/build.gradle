@@ -2,5 +2,5 @@ apply from: "$rootProject.projectDir/build-common-module.gradle"
 
 dependencies {
 //  Android
-    implementation androidx.app_compat
+    implementation deps.androidx.app_compat
 }
