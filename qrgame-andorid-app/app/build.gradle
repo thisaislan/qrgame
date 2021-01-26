@@ -1,24 +1,13 @@
-plugins {
-    id "com.android.application"
-    id "kotlin-android"
-}
+apply plugin: "com.android.application"
+apply from: "$rootProject.projectDir/build-common.gradle"
 
 android {
-    compileSdkVersion versions.sdks.compile_sdk
-    buildToolsVersion versions.tools.build_tools
-
     buildFeatures {
         dataBinding true
     }
 
     defaultConfig {
         applicationId "thisaislan.qrgame"
-        minSdkVersion versions.sdks.min_sdk
-        targetSdkVersion versions.sdks.target_sdk
-        versionCode versions.app.version_major * 10000 + versions.app.version_minor * 100 + versions.app.version_patch
-        versionName "${versions.app.version_major}.${versions.app.version_minor}.${versions.app.version_patch}"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -27,20 +16,10 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
 }
 
 dependencies {
     implementation project(path: ":base")
-
-//  Kotlin
-    implementation proj.deps.kotlin_stdlib
 
 //  Android
     implementation deps.androidx.core
@@ -53,9 +32,4 @@ dependencies {
 //  Third party
     implementation deps.third.rebus_permission
     implementation deps.third.budiyev_scan_code
-
-//  Test
-    testImplementation deps.test.junit
-    androidTestImplementation deps.test.androidx_junit
-    androidTestImplementation deps.test.espresso_core
 }

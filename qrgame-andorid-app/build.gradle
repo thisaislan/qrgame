@@ -1,16 +1,9 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 apply from: "$rootProject.projectDir/deps.gradle"
 
 buildscript {
-    ext.proj = [:]
-
-    proj.versions = [
+    def versions = [
             gradle_version: "4.1.1",
             kotlin_version: "1.4.10"
-    ]
-
-    proj.deps = [
-            kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${proj.versions.kotlin_version}"
     ]
 
     repositories {
@@ -19,11 +12,8 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:${proj.versions.gradle_version}"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${proj.versions.kotlin_version}"
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath "com.android.tools.build:gradle:${versions.gradle_version}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin_version}"
     }
 }
 
