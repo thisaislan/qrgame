@@ -21,9 +21,6 @@ android {
 dependencies {
     implementation project(path: ":base")
 
-//  Kotlin
-    implementation proj.deps.kotlin_stdlib
-
 //  Android
     implementation deps.androidx.core
     implementation deps.androidx.app_compat

@@ -9,10 +9,6 @@ buildscript {
             kotlin_version: "1.4.10"
     ]
 
-    proj.deps = [
-            kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${proj.versions.kotlin_version}"
-    ]
-
     repositories {
         google()
         jcenter()
