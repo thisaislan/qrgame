@@ -9,7 +9,7 @@ deps.androidx = [
 ]
 
 deps.google = [
-        material: "com.google.android.material:material:${versions.deps.google.material}",
+        material: "com.google.android.material:material:${versions.deps.google.material}"
 ]
 
 deps.third = [
