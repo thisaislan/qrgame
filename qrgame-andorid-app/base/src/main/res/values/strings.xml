@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QRGame</string>
+    <string name="game">Game</string>
 </resources>
