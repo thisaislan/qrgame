@@ -4,4 +4,7 @@ apply from: "$rootProject.projectDir/build-common.gradle"
 dependencies {
 //  Android
     implementation deps.androidx.app_compat
+
+//  Google
+    implementation deps.google.material
 }
