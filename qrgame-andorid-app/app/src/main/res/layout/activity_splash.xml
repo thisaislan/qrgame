@@ -1,4 +1,5 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -28,7 +29,7 @@
             android:fontFamily="@font/bauhaus_93"
             android:text="@string/game"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_size_xhuge"
+            android:textSize="@dimen/text_size_xxhuge"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,4 +37,5 @@
             tools:visibility="visible" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

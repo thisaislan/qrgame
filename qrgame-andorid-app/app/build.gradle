@@ -2,10 +2,6 @@ apply plugin: "com.android.application"
 apply from: "$rootProject.projectDir/build-common.gradle"
 
 android {
-    buildFeatures {
-        dataBinding true
-    }
-
     defaultConfig {
         applicationId "thisaislan.qrgame"
     }
@@ -20,6 +16,7 @@ android {
 
 dependencies {
     implementation project(path: ":base")
+    implementation project(path: ":start")
 
 //  Android
     implementation deps.androidx.core
@@ -28,8 +25,4 @@ dependencies {
 
 //  Google
     implementation deps.google.material
-
-//  Third party
-    implementation deps.third.rebus_permission
-    implementation deps.third.budiyev_scan_code
 }

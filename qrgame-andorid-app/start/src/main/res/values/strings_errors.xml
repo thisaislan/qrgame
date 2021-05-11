@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="while_reading_qr_code">An error occurred while reading the qrcode</string>
+    <string name="while_processing_qr_code">An error occurred while processing the qrcode </string>
+</resources>

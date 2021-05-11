@@ -3,9 +3,11 @@ apply from: "$rootProject.projectDir/versions.gradle"
 ext.deps = [:]
 
 deps.androidx = [
-        core             : "androidx.core:core-ktx:${versions.deps.android.core}",
-        app_compat       : "androidx.appcompat:appcompat:${versions.deps.android.app_compact}",
-        constraint_layout: "androidx.constraintlayout:constraintlayout:${versions.deps.android.constraint}"
+        core                : "androidx.core:core-ktx:${versions.deps.android.core}",
+        app_compat          : "androidx.appcompat:appcompat:${versions.deps.android.app_compact}",
+        constraint_layout   : "androidx.constraintlayout:constraintlayout:${versions.deps.android.constraint}",
+        navigation_ui       : "androidx.navigation:navigation-ui-ktx:${versions.deps.android.navigation_ui}",
+        navigation_fragment : "androidx.navigation:navigation-fragment-ktx:${versions.deps.android.navigation_fragment}"
 ]
 
 deps.google = [
@@ -13,7 +15,6 @@ deps.google = [
 ]
 
 deps.third = [
-        rebus_permission : "rebus:permission-utils:${versions.deps.third_party.rebus_permission}",
         budiyev_scan_code: "com.budiyev.android:code-scanner:${versions.deps.third_party.budiyev_scan_code}"
 ]
 

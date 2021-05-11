@@ -28,6 +28,24 @@ fun View.startFadeInAnimation(
     )
 }
 
+fun View.startFadeOutAnimation(
+    @IntegerRes animationDurationId: Int = R.integer.animation_medium_duration,
+    interpolator: BaseInterpolator = AccelerateDecelerateInterpolator(),
+    onAnimationEnd: (() -> Unit)? = null,
+    onAnimationRepeat: (() -> Unit)? = null,
+    onAnimationStart: (() -> Unit)? = null,
+) {
+    startAlphaAnimation(
+        1f,
+        0f,
+        animationDurationId,
+        interpolator,
+        onAnimationEnd,
+        onAnimationRepeat,
+        onAnimationStart
+    )
+}
+
 private fun View.startAlphaAnimation(
     fromAlpha: Float,
     toAlpha: Float,

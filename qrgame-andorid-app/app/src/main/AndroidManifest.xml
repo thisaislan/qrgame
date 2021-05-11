@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="thisaislan.qrgame">
 
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,9 +23,6 @@
         </activity>
         <activity
             android:name=".GameActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".StartActivity"
             android:screenOrientation="portrait" />
     </application>
 

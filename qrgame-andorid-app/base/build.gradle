@@ -4,6 +4,7 @@ apply from: "$rootProject.projectDir/build-common.gradle"
 dependencies {
 //  Android
     implementation deps.androidx.app_compat
+    implementation deps.androidx.constraint_layout
 
 //  Google
     implementation deps.google.material

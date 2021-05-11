@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.QRGame.Widget.AppCompact.Button.SecondaryVariant" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_secondary_variant</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingStart">@dimen/margin_padding_xnormal</item>
+        <item name="android:paddingTop">@dimen/margin_padding_xsmall</item>
+        <item name="android:paddingEnd">@dimen/margin_padding_xnormal</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_xsmall</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
