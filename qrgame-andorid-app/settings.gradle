@@ -1,3 +1,4 @@
+include ':start'
 include ":base"
 include ":app"
 rootProject.name = "QRGame"
