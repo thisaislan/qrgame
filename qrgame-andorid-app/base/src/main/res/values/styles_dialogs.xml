@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.QRGame.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowFixedWidthMajor">80%</item>
+        <item name="windowFixedWidthMinor">80%</item>
+    </style>
+
+</resources>
