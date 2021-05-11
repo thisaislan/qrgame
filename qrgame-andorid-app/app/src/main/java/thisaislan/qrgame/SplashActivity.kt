@@ -28,6 +28,7 @@ class SplashActivity : BaseActivity() {
                     AudioPlayer.playAudio(this@SplashActivity, R.raw.ding)
 
                     Handler().postDelayed({
+                        startActivity(Intent(this@SplashActivity, StartActivity::class.java))
                     }, resources.getIntegerAsLong(R.integer.animation_medium_duration))
                 })
         }
