@@ -18,9 +18,11 @@ versions.tools = [
 
 versions.deps = [
         "android"    : [
-                core       : "1.3.2",
-                app_compact: "1.2.0",
-                constraint : "2.0.4"
+                core                : "1.3.2",
+                app_compact         : "1.2.0",
+                constraint          : "2.0.4",
+                navigation_ui       : "2.3.3",
+                navigation_fragment : "2.3.3",
         ],
 
         "google"     : [
@@ -28,7 +30,6 @@ versions.deps = [
         ],
 
         "third_party": [
-                rebus_permission : "2.0.7",
                 budiyev_scan_code: "2.1.0"
         ],
 

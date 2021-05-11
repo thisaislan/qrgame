@@ -3,7 +3,8 @@ apply from: "$rootProject.projectDir/deps.gradle"
 buildscript {
     def versions = [
             gradle_version: "4.1.1",
-            kotlin_version: "1.4.21"
+            kotlin_version: "1.4.21",
+            nav_version: "2.3.5"
     ]
 
     repositories {
@@ -14,6 +15,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:${versions.gradle_version}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin_version}"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:${versions.nav_version}"
     }
 }
 
@@ -21,10 +23,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-
-        maven {
-            url "http://dl.bintray.com/raphaelbussa/maven"
-        }
     }
 }
 

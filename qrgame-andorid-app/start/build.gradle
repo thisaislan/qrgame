@@ -1,11 +1,19 @@
 apply plugin: "com.android.library"
 apply from: "$rootProject.projectDir/build-common.gradle"
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 dependencies {
+    implementation project(path: ":base")
+
 //  Android
     implementation deps.androidx.app_compat
+    implementation deps.androidx.navigation_ui
+    implementation deps.androidx.navigation_fragment
     implementation deps.androidx.constraint_layout
 
 //  Google
     implementation deps.google.material
+
+//  Third party
+    implementation deps.third.budiyev_scan_code
 }
