@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_question">Lets read a QRGame?</string>
+    <string name="first_step_title">Permissions time!</string>
+    <string name="first_step_explanation">We need to use your camera to scan some cool QR codes!</string>
+    <string name="first_step_question">Do you allow us to use your camera?</string>
+    <string name="need_permission_title">Oh no!</string>
+    <string name="need_permission_explanation">It looks like we cannot use the camera</string>
+    <string name="need_permission_question">Could you go into settings and allow us to use the camera?</string>
+    <string name="processing_message">Preparing everything...</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.QRGame.Widget.AppCompact.TextView.Text" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginStart">@dimen/margin_padding_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_padding_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Theme.QRGame.Widget.AppCompact.TextView.Title" parent="Theme.QRGame.Widget.AppCompact.TextView.Text">
+        <item name="android:layout_marginBottom">@dimen/text_size_xlarge</item>
+        <item name="android:textSize">@dimen/text_size_huge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
