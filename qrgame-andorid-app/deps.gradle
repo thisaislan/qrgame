@@ -19,7 +19,6 @@ deps.third = [
 ]
 
 deps.test = [
-        junit         : "junit:junit:${versions.deps.junit}",
         androidx_junit: "androidx.test.ext:junit:${versions.deps.test.android_junit}",
         espresso_core : "androidx.test.espresso:espresso-core:${versions.deps.test.espresso_core}"
 ]

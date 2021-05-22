@@ -30,7 +30,6 @@ android {
 
 dependencies {
 //  Test
-    testImplementation deps.test.junit
     androidTestImplementation deps.test.androidx_junit
     androidTestImplementation deps.test.espresso_core
 }
