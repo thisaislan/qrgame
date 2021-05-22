@@ -1,0 +1,13 @@
+apply plugin: "com.android.library"
+apply from: "$rootProject.projectDir/build-common.gradle"
+
+dependencies {
+    implementation project(path: ":base")
+
+//  Android
+    implementation deps.androidx.app_compat
+    implementation deps.androidx.constraint_layout
+
+//  Google
+    implementation deps.google.material
+}
