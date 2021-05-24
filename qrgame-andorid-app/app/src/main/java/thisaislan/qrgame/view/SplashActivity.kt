@@ -1,13 +1,14 @@
-package thisaislan.qrgame
+package thisaislan.qrgame.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import thisaislan.qrgame.base.BaseActivity
-import thisaislan.qrgame.base.extesions.getIntegerAsLong
-import thisaislan.qrgame.base.extesions.startFadeInAnimation
-import thisaislan.qrgame.base.extesions.visible
-import thisaislan.qrgame.base.singletons.AudioPlayer
+import thisaislan.qrgame.R
+import thisaislan.qrgame.base.view.BaseActivity
+import thisaislan.qrgame.base.extesion.getIntegerAsLong
+import thisaislan.qrgame.base.extesion.startFadeInAnimation
+import thisaislan.qrgame.base.extesion.visible
+import thisaislan.qrgame.base.util.AudioPlayer
 import thisaislan.qrgame.databinding.ActivitySplashBinding
 import thisaislan.qrgame.start.view.activity.StartActivity
 

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QRGame">
         <activity
-            android:name=".SplashActivity"
+            android:name=".view.SplashActivity"
             android:noHistory="true"
             android:screenOrientation="portrait">
             <intent-filter>

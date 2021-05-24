@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import thisaislan.qrgame.base.extesions.cameraPermissionDenied
-import thisaislan.qrgame.base.extesions.sharedPreferences
+import thisaislan.qrgame.base.extesion.cameraPermissionDenied
+import thisaislan.qrgame.base.extesion.sharedPreferences
 import thisaislan.qrgame.start.R
 import thisaislan.qrgame.start.databinding.FragmentFirstStepBinding
 

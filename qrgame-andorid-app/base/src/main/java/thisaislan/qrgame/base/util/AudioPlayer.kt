@@ -1,4 +1,4 @@
-package thisaislan.qrgame.base.singletons
+package thisaislan.qrgame.base.util
 
 import android.content.Context
 import android.media.MediaPlayer

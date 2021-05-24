@@ -2,10 +2,10 @@ package thisaislan.qrgame.start.view.activity
 
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
-import thisaislan.qrgame.base.BaseActivity
-import thisaislan.qrgame.base.extesions.sharedPreferences
-import thisaislan.qrgame.base.extesions.hasPreviousDenialCameraPermission
-import thisaislan.qrgame.base.extesions.isCameraPermissionGranted
+import thisaislan.qrgame.base.view.BaseActivity
+import thisaislan.qrgame.base.extesion.sharedPreferences
+import thisaislan.qrgame.base.extesion.hasPreviousDenialCameraPermission
+import thisaislan.qrgame.base.extesion.isCameraPermissionGranted
 import thisaislan.qrgame.start.R
 
 class StartActivity : BaseActivity() {

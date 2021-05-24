@@ -5,10 +5,10 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
 import android.webkit.*
-import thisaislan.qrgame.base.BaseActivity
-import thisaislan.qrgame.base.extesions.getHexColor
-import thisaislan.qrgame.base.extesions.gone
-import thisaislan.qrgame.base.extesions.startFadeOutAnimation
+import thisaislan.qrgame.base.view.BaseActivity
+import thisaislan.qrgame.base.extesion.getHexColor
+import thisaislan.qrgame.base.extesion.gone
+import thisaislan.qrgame.base.extesion.startFadeOutAnimation
 import thisaislan.qrgame.base.util.Constants
 import thisaislan.qrgame.base.view.dialog.NeutralDialog
 import thisaislan.qrgame.game.R

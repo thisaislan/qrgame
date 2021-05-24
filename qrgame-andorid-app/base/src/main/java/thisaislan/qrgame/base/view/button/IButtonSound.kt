@@ -2,7 +2,7 @@ package thisaislan.qrgame.base.view.button
 
 import android.content.Context
 import thisaislan.qrgame.base.R
-import thisaislan.qrgame.base.singletons.AudioPlayer
+import thisaislan.qrgame.base.util.AudioPlayer
 
 interface IButtonSound {
 
