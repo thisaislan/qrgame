@@ -16,23 +16,24 @@ class SplashActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        ActivitySplashBinding.inflate(layoutInflater).initializeViews()
+    }
 
-        with(ActivitySplashBinding.inflate(layoutInflater)) {
-            setContentView(root)
+    private fun ActivitySplashBinding.initializeViews() {
+        setContentView(root)
 
-            logo.startFadeInAnimation(
-                onAnimationStart = {
-                    AudioPlayer.playAudio(this@SplashActivity, R.raw.dash)
-                },
-                onAnimationEnd = {
-                    title.visible()
-                    AudioPlayer.playAudio(this@SplashActivity, R.raw.ding)
+        logo.startFadeInAnimation(
+            onAnimationStart = {
+                AudioPlayer.playAudio(this@SplashActivity, R.raw.dash)
+            },
+            onAnimationEnd = {
+                title.visible()
+                AudioPlayer.playAudio(this@SplashActivity, R.raw.ding)
 
-                    Handler().postDelayed({
-                        startActivity(Intent(this@SplashActivity, StartActivity::class.java))
-                    }, resources.getIntegerAsLong(R.integer.animation_medium_duration))
-                })
-        }
+                Handler().postDelayed({
+                    startActivity(Intent(this@SplashActivity, StartActivity::class.java))
+                }, resources.getIntegerAsLong(R.integer.animation_medium_duration))
+            })
     }
 
 }
