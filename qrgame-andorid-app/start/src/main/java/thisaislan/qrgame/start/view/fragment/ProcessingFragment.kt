@@ -65,7 +65,7 @@ class ProcessingFragment : Fragment(R.layout.fragment_processing) {
 
     private fun errorOnQrCodeValueProcessing() = NeutralDialog(
         context = requireContext(),
-        message = R.string.while_processing_qr_code
+        message = R.string.error_while_processing_qr_code
     ) { navigateBack() }.show()
 
     private fun navigateBack() =
