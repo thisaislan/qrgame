@@ -1,7 +1,6 @@
 package thisaislan.qrgame.base
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +27,7 @@ open class BaseActivity : AppCompatActivity() {
         if (exitToast.view.windowToken == null)
             exitToast.show()
         else {
-            finish()
+            finishAffinity()
             exitToast.cancel()
         }
     }
