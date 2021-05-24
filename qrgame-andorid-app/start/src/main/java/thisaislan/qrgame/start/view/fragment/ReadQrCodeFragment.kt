@@ -67,7 +67,7 @@ class ReadQrCodeFragment : Fragment(R.layout.fragment_read_qr_code) {
     private fun errorWhileReading() =
         NeutralDialog(
             context = requireContext(),
-            message = R.string.while_reading_qr_code
+            message = R.string.error_while_reading_qr_code
         ) { navigateBack() }.show()
 
     private fun navigateBack() =
