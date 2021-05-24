@@ -9,9 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
-import thisaislan.qrgame.base.extesions.getIntegerAsLong
-import thisaislan.qrgame.base.extesions.startFadeInAnimation
-import thisaislan.qrgame.base.extesions.startFadeOutAnimation
+import thisaislan.qrgame.base.extesion.getIntegerAsLong
+import thisaislan.qrgame.base.extesion.startFadeInAnimation
+import thisaislan.qrgame.base.extesion.startFadeOutAnimation
 import thisaislan.qrgame.base.view.dialog.NeutralDialog
 import thisaislan.qrgame.game.view.GameActivity
 import thisaislan.qrgame.start.R

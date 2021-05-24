@@ -1,4 +1,4 @@
-package thisaislan.qrgame.base.extesions
+package thisaislan.qrgame.base.extesion
 
 import android.content.Context
 import android.content.res.Resources
