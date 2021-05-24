@@ -9,12 +9,46 @@ let cCP = tr;
 let cRl = tr;
 // stop
 let stp = fl;
+// onMenu
+let oMn = fl;
 // onPause
 let oPs = fl;
+// onPauseAndMenu
+let oPM = fl;
 
 /* Meta game */
-function pause() {
-	if (!cCP) {
+function openMenu() {
+	if (oMn) {
+		return;
+	}
+
+	oMn = tr;
+
+	if (oPs) {
+		oPM = tr;
+	} else {
+		oPs = tr;
+	}
+
+	AndroidInterface.openMenu();
+}
+
+function closeMenu() {
+	if (!oMn) {
+		return;
+	}
+
+	oMn = fl;
+
+	if (oPM) {
+		oPM = fl;
+	} else {
+		oPs = fl;
+	}
+}
+
+function pause() {	
+	if (!cCP || oMn) {
 		return;
 	}
 	_bp();
@@ -32,7 +66,7 @@ function pause() {
 }
 
 function reload() {
-	if (!cRl) {
+	if (!cRl || oMn) {
 		return;
 	}
 	_ar();

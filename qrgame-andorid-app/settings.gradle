@@ -1,4 +1,5 @@
+rootProject.name = "QRGame"
 include ':start'
 include ":base"
 include ":app"
-rootProject.name = "QRGame"
+include ':game'

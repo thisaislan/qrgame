@@ -1,15 +1,19 @@
 package thisaislan.qrgame.start.view.fragment
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
+import thisaislan.qrgame.base.extesions.getIntegerAsLong
 import thisaislan.qrgame.base.extesions.startFadeInAnimation
 import thisaislan.qrgame.base.extesions.startFadeOutAnimation
 import thisaislan.qrgame.base.view.dialog.NeutralDialog
+import thisaislan.qrgame.game.view.GameActivity
 import thisaislan.qrgame.start.R
 import thisaislan.qrgame.start.databinding.FragmentProcessingBinding
 import thisaislan.qrgame.start.viewModel.QrValueProcessingViewModel
@@ -52,7 +56,11 @@ class ProcessingFragment : Fragment(R.layout.fragment_processing) {
     }
 
     private fun successOnQrCodeValueProcessing() {
-        // TODO - Call game Activity
+        startActivity(Intent(requireContext(), GameActivity::class.java))
+
+        Handler().postDelayed({
+            navigateBack()
+        }, resources.getIntegerAsLong(R.integer.animation_xtiny_duration))
     }
 
     private fun errorOnQrCodeValueProcessing() = NeutralDialog(

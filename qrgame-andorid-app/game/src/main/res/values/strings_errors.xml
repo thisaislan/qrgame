@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_while_webview_reading_qr_code">Sorry, there is a problem with that qrgame!</string>
+</resources>

@@ -10,6 +10,10 @@ fun View.visible() {
     this.visibility = View.VISIBLE
 }
 
+fun View.gone() {
+    this.visibility = View.GONE
+}
+
 fun View.startFadeInAnimation(
     @IntegerRes animationDurationId: Int = R.integer.animation_medium_duration,
     interpolator: BaseInterpolator = AccelerateDecelerateInterpolator(),
