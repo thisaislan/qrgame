@@ -4,6 +4,7 @@ apply plugin: "androidx.navigation.safeargs.kotlin"
 
 dependencies {
     implementation project(path: ":base")
+    implementation project(path: ":game")
 
 //  Android
     implementation deps.androidx.app_compat
