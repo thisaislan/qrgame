@@ -3,11 +3,11 @@ apply from: "$rootProject.projectDir/versions.gradle"
 ext.deps = [:]
 
 deps.androidx = [
-        core                : "androidx.core:core-ktx:${versions.deps.android.core}",
-        app_compat          : "androidx.appcompat:appcompat:${versions.deps.android.app_compact}",
-        constraint_layout   : "androidx.constraintlayout:constraintlayout:${versions.deps.android.constraint}",
-        navigation_ui       : "androidx.navigation:navigation-ui-ktx:${versions.deps.android.navigation_ui}",
-        navigation_fragment : "androidx.navigation:navigation-fragment-ktx:${versions.deps.android.navigation_fragment}"
+        core               : "androidx.core:core-ktx:${versions.deps.android.core}",
+        app_compat         : "androidx.appcompat:appcompat:${versions.deps.android.app_compact}",
+        constraint_layout  : "androidx.constraintlayout:constraintlayout:${versions.deps.android.constraint}",
+        navigation_ui      : "androidx.navigation:navigation-ui-ktx:${versions.deps.android.navigation_ui}",
+        navigation_fragment: "androidx.navigation:navigation-fragment-ktx:${versions.deps.android.navigation_fragment}"
 ]
 
 deps.google = [
