@@ -1,11 +1,11 @@
-package thisaislan.qrgame.game.view
+package thisaislan.qrgame.game.view.activity
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
 import android.webkit.*
-import thisaislan.qrgame.base.view.BaseActivity
+import thisaislan.qrgame.base.view.activity.BaseActivity
 import thisaislan.qrgame.base.extesion.getHexColor
 import thisaislan.qrgame.base.extesion.gone
 import thisaislan.qrgame.base.extesion.startFadeOutAnimation
