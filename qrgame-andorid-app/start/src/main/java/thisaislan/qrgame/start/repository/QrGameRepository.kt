@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import thisaislan.qrgame.base.util.Constants
 import java.io.File
 import java.io.FileOutputStream
-import java.io.IOException
 
 class QrGameRepository(private val contextWrapper: ContextWrapper) : IQrGameRepository {
 

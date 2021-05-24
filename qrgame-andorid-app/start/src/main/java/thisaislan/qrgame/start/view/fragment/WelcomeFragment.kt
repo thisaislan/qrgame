@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import thisaislan.qrgame.base.view.dialog.NeutralDialog
 import thisaislan.qrgame.start.R
 import thisaislan.qrgame.start.databinding.FragmentWelcomeBinding
 
