@@ -15,7 +15,8 @@ object AudioPlayer {
     }
 
     fun playAudio(context: Context, @RawRes rawResId: Int) {
-        val assetFileDescriptor = context.applicationContext.resources.openRawResourceFd(rawResId) ?: return
+        val assetFileDescriptor =
+            context.applicationContext.resources.openRawResourceFd(rawResId) ?: return
         val mediaPlayer = requestPlayer() ?: return
 
         mediaPlayer.run {
