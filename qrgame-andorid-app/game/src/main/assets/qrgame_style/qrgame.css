@@ -1,0 +1,159 @@
+@import "colors.css";
+
+@font-face {
+    font-family:"bauhaus_93";
+    src: url("../font/bauhaus_93.TTF") format("truetype");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+   -khtml-user-select: none;
+   -o-user-select: none;
+   -webkit-user-select: none;
+   -webkit-tap-highlight-color: #00000000;
+}
+
+button:focus{
+    outline:none;
+}
+.mg {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-primary);
+}
+.mg button {
+    border: 0;
+    background-color: transparent;
+}
+.mg button:hover {
+    cursor: pointer;
+}
+.header {
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.title {
+    color: #ffffffe8;
+    font-family: "bauhaus_93";
+    flex: 0 1 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu {
+    color: #ffffffe8;
+    flex: 0 1 auto;
+    margin-left: auto; 
+}
+.outScreen {
+    height: 50%;
+    margin: 10px;
+    padding: 40px 20px;
+    background-color: #222222;
+    border-radius: 10px 10px 30px 30px;
+}
+.inScreen {
+    width: 100%;
+    height:100%;
+}
+.canvas {
+    width: 100%;
+    height:100%;
+    border:1px solid #1672af;
+    background-color: #47aff5;
+}
+.controls{
+    height: 24%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+}
+.centerButtons {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.centerButtons button {
+    background-color: #363636;
+    width: 42px; height: 32px;
+    transform:rotate(-30deg);
+    font-weight: bolder;
+    margin: 0 8px 0 8px;
+    border-radius: 10px;
+    color: #ffffff60;
+}
+.centerButtons button:active {
+    color: #ffffff40;
+}
+.dpad {
+    float: left;
+    position: relative;
+    padding: 5px;
+    width: 100px; height: 100px;
+    margin: 8px 0 0 25px;
+    background-color: #00000018;
+    border-radius: 80px;
+}
+.dpad:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 38px; left: 38px;
+    height: 34px; width: 34px;
+    background-color: #222222;
+}
+.dpad button {
+    background-color: #222222;
+    width: 34px; height: 34px;
+    position: absolute;
+    border-radius: 2px;
+    padding: 0%;
+    color: #ffffff40;
+}
+.dpad button:active {
+    background-color: #363636;
+    color: #ffffff60;
+}
+.dpad .left {
+    top: 38px; left: 5px;
+    border-radius: 2px 0 0 2px;
+}
+.dpad .up {
+    top: 5px; left: 38px;
+    border-radius: 2px 2px 0 0;
+}
+.dpad .down {
+    bottom: 5px; left: 38px;   
+    border-radius: 0 0 2px 2px;
+}
+.dpad .right {
+    top: 38px; right: 5px;   
+    border-radius: 02px 2px 0;
+}
+.actionButtons {
+    float: right;
+    display: inline-block;    
+    margin: 25px 25px 0 0;
+    padding: 5px;
+    background-color: #00000018;
+    transform:rotate(-30deg);
+    border-radius: 30px;
+}
+.actionButtons button {
+    background-color: var(--color-secondary);
+    margin: 6px;
+    height: 45px;
+    width: 45px;
+    font-weight: bolder;
+    border-radius: 30px;
+    color: #ffffff60 ;
+}
+.actionButtons button:active {
+    background-color: var(--color-secondary-variant);
+}

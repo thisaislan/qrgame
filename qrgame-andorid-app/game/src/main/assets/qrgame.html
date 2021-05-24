@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="qrgame_style/qrgame.css">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>QRGame</title>
+	</head>
+	<body onload="load()">
+		<div class="mg">
+			<div class="header">
+				<strong class="title"> QRGame </strong>
+				<button type="button" class="menu" onclick="openMenu()">&#8801</button>
+			</div>
+			<div class="outScreen">
+				<div class="inScreen">
+					<canvas id="canvas" class="canvas">
+				</div>
+			</div>
+			<div class="controls">
+				<div>
+					<div class="centerButtons">
+						<button type="button" class="reload" onclick="reload()">&#8635</button>
+						<button type="button" class="pause" onclick="pause()">&#9634</button>
+					</div>
+					<div class="dpad">
+						<button type="button" class="left" onclick="leftButtonClickAction()" onpointerdown="leftButtonDownAction()" onpointerup="leftButtonUpAction()">
+							&#9664;
+						</button>
+						<button type="button" class="up"onclick="upButtonClickAction()" onpointerdown="upButtonDownAction()" onpointerup="upButtonUpAction()">
+							&#9650;
+						</button>
+						<button type="button" class="down" onclick="downButtonClickAction()" onpointerdown="downButtonDownAction()" onpointerup="downButtonUpAction()">
+							&#9660;
+						</button>
+						<button type="button" class="right" onclick="righButtonClickAction()" onpointerdown="rightButtonDownAction()" onpointerup="rightButtonUpAction()">
+							&#9654;
+						</button>
+					</div>
+					<div class="actionButtons">
+						<button type="button" class="Q" onclick="qButtonClickAction()" onpointerdown="qButtonDownAction()" onpointerup="qButtonUpAction()">Q</button>
+						<button type="button" class="R" onclick="rButtonClickAction()" onpointerdown="rButtonDownAction()" onpointerup="rButtonUpAction()">R</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="scripts/utils/qrgame-canvas-utils.js"></script>
+		<script type="text/javascript" src="scripts/utils/qrgame-math-utils.js"></script>
+		<script type="text/javascript" src="scripts/qrgame.js"></script>
+		<script type="text/javascript" src="scripts/loader.js"></script>
+	</body>
+</html>
