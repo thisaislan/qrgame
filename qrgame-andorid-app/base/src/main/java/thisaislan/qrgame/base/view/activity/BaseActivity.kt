@@ -1,4 +1,4 @@
-package thisaislan.qrgame.base.view
+package thisaislan.qrgame.base.view.activity
 
 import android.os.Bundle
 import android.view.View

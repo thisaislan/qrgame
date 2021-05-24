@@ -1,10 +1,10 @@
-package thisaislan.qrgame.view
+package thisaislan.qrgame.view.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import thisaislan.qrgame.R
-import thisaislan.qrgame.base.view.BaseActivity
+import thisaislan.qrgame.base.view.activity.BaseActivity
 import thisaislan.qrgame.base.extesion.getIntegerAsLong
 import thisaislan.qrgame.base.extesion.startFadeInAnimation
 import thisaislan.qrgame.base.extesion.visible
