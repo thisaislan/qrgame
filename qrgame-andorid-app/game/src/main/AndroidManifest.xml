@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name=".GameActivity"
+            android:name=".view.GameActivity"
             android:screenOrientation="portrait" />
     </application>
 
