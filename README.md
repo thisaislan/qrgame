@@ -11,7 +11,6 @@ QRGame is an Android project that uses QR code as a game cartridge allowing you 
   <img src="https://raw.githubusercontent.com/thisaislan/qrgame/main/images/cover_2.png" width="200" /> 
   <img src="https://raw.githubusercontent.com/thisaislan/qrgame/main/images/cover_3.png" width="200" />
   <img src="https://raw.githubusercontent.com/thisaislan/qrgame/main/images/cover_4.png" width="200" />
-  <img src="https://raw.githubusercontent.com/thisaislan/qrgame/main/images/cover_5.png" width="200" />
 </p>
 
 ## Table of Contents
