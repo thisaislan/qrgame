@@ -7,10 +7,10 @@
 
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# class *:
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
 
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
