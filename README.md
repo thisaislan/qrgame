@@ -168,7 +168,7 @@ Inside the [example folder](https://github.com/thisaislan/qrgame/tree/main/examp
 ## Possible improvements
 QRGame is a proof of concept, because that, there are a lot of possibilities to improve the project. For now I just want to show the poc, but the project is open to new ideas :relaxed:.
 
-## Thanks :sparkles:
+## Thanks
 Thanks to these wonderful people for all their support, partnership and friendship:
 
 <table>
