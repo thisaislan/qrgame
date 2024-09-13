@@ -7,25 +7,22 @@ android {
     }
 
     compileSdkVersion versions.sdks.compile_sdk
-    buildToolsVersion versions.tools.build_tools
 
     defaultConfig {
         minSdkVersion versions.sdks.min_sdk
         targetSdkVersion versions.sdks.target_sdk
-        versionCode versions.app.version_major * 10000 + versions.app.version_minor * 100 + versions.app.version_patch
-        versionName "${versions.app.version_major}.${versions.app.version_minor}.${versions.app.version_patch}"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         build {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
 
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }

@@ -1,9 +1,14 @@
 apply plugin: "com.android.application"
+apply from: "$rootProject.projectDir/versions.gradle"
 apply from: "$rootProject.projectDir/build-common.gradle"
 
 android {
+
+    namespace 'thisaislan.qrgame'
     defaultConfig {
         applicationId "thisaislan.qrgame"
+        versionName "${versions.app.version_major}.${versions.app.version_minor}.${versions.app.version_patch}"
+        versionCode versions.app.version_code
     }
 }
 

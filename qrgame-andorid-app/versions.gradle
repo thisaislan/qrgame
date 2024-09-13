@@ -3,17 +3,14 @@ ext.versions = [:]
 versions.app = [
         version_major: 1,
         version_minor: 0,
-        version_patch: 0
+        version_patch: 2,
+        version_code: 10002
 ]
 
 versions.sdks = [
-        compile_sdk: 29,
+        compile_sdk: 34,
         min_sdk    : 21,
-        target_sdk : 29
-]
-
-versions.tools = [
-        build_tools: "29.0.3"
+        target_sdk : 34
 ]
 
 versions.deps = [
@@ -22,7 +19,7 @@ versions.deps = [
                 app_compact        : "1.2.0",
                 constraint         : "2.0.4",
                 navigation_ui      : "2.3.3",
-                navigation_fragment: "2.3.3",
+                navigation_fragment: "2.3.3"
         ],
 
         "google"     : [
@@ -30,7 +27,7 @@ versions.deps = [
         ],
 
         "third_party": [
-                budiyev_scan_code: "2.1.0"
+                budiyev_scan_code: "2.3.2"
         ],
 
         "test"       : [

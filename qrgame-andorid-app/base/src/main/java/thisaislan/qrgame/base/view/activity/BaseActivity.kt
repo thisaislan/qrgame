@@ -25,7 +25,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if (exitToast.view.windowToken == null)
+        if (exitToast.view?.windowToken == null)
             exitToast.show()
         else {
             finishAffinity()

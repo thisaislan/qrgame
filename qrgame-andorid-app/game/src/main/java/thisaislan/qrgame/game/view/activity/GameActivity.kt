@@ -34,6 +34,9 @@ class GameActivity : BaseActivity() {
             isHapticFeedbackEnabled = false
             isLongClickable = false
 
+            settings.allowContentAccess = true
+            settings.allowFileAccess = true
+
             webViewClient = object : WebViewClient() {
 
                 override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
