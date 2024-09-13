@@ -15,7 +15,7 @@ deps.google = [
 ]
 
 deps.third = [
-        budiyev_scan_code: "com.budiyev.android:code-scanner:${versions.deps.third_party.budiyev_scan_code}"
+        budiyev_scan_code: "com.github.yuriy-budiyev:code-scanner:${versions.deps.third_party.budiyev_scan_code}"
 ]
 
 deps.test = [

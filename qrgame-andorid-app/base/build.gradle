@@ -1,5 +1,8 @@
 apply plugin: "com.android.library"
 apply from: "$rootProject.projectDir/build-common.gradle"
+android {
+    namespace 'thisaislan.qrgame.base'
+}
 
 dependencies {
 //  Android

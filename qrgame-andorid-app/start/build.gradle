@@ -1,6 +1,10 @@
 apply plugin: "com.android.library"
 apply from: "$rootProject.projectDir/build-common.gradle"
-apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: "androidx.navigation.safeargs"
+
+android {
+    namespace 'thisaislan.qrgame.start'
+}
 
 dependencies {
     implementation project(path: ":base")

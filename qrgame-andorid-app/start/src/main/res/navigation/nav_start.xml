@@ -78,7 +78,6 @@
             app:launchSingleTop="true" />
         <argument
             android:name="qrValue"
-            android:defaultValue="@null"
             app:argType="string"
             app:nullable="true" />
     </fragment>
