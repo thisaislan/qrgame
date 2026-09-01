@@ -8,9 +8,9 @@ versions.app = [
 ]
 
 versions.sdks = [
-        compile_sdk: 35,
+        compile_sdk: 36,
         min_sdk    : 21,
-        target_sdk : 35
+        target_sdk : 36
 ]
 
 versions.deps = [
