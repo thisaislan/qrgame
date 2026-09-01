@@ -2,8 +2,8 @@ apply from: "$rootProject.projectDir/deps.gradle"
 
 buildscript {
     def versions = [
-            gradle_version: '8.5.1',
-            kotlin_version: '1.9.0',
+            gradle_version: '8.13.2',
+            kotlin_version: '2.1.0',
             nav_version   : '2.5.0'
     ]
 

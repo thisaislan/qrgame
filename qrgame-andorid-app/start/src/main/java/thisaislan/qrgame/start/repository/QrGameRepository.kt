@@ -45,6 +45,6 @@ class QrGameRepository(private val contextWrapper: ContextWrapper) : IQrGameRepo
 
     private fun getScript() = File(getFolder(), Constants.FileNames.QR_GAME_SCRIPT)
 
-    private fun getNameByTag(tag: String) = tag.dropLast(1).toLowerCase()
+    private fun getNameByTag(tag: String) = tag.dropLast(1).lowercase()
 
 }

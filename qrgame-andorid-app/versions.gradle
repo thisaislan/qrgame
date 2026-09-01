@@ -3,14 +3,14 @@ ext.versions = [:]
 versions.app = [
         version_major: 1,
         version_minor: 0,
-        version_patch: 2,
+        version_patch: 3,
         version_code: 10002
 ]
 
 versions.sdks = [
-        compile_sdk: 34,
+        compile_sdk: 35,
         min_sdk    : 21,
-        target_sdk : 34
+        target_sdk : 35
 ]
 
 versions.deps = [
